@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAlertController" customModule="studyRenderAsAlertController" customModuleProvider="target">
             <connections>
+                <outlet property="closeButton" destination="iT8-Qz-7en" id="T41-2E-e8L"/>
                 <outlet property="contentView" destination="UDO-iA-qV9" id="BE2-Ah-jel"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hLd-hI-Pch"/>
             </connections>
@@ -39,7 +40,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT8-Qz-7en">
-                            <rect key="frame" x="25" y="189" width="250" height="40"/>
+                            <rect key="frame" x="25" y="180" width="250" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="[ CLOSE ]"/>

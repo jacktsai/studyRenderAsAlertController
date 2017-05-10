@@ -19,9 +19,6 @@ class ViewController: UIViewController {
     
     @IBAction func presentMyAlertController() {
         let vc = MyAlertController()
-        vc.definesPresentationContext = true
-        vc.modalPresentationStyle = .overCurrentContext
-        vc.modalTransitionStyle = .crossDissolve
         present(vc, animated: true, completion: nil)
     }
 }
