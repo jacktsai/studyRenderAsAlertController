@@ -3,23 +3,26 @@
 //  studyRenderAsAlertController
 //
 //  Created by Jack Tsai on 2017/5/10.
-//  Copyright © 2017年 wa0327. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func presentUIAlertController() {
+        let vc = UIAlertController(title: "Hello, world!", message: "message from UIAlertController", preferredStyle: .alert)
+        vc.addAction(UIAlertAction(title: "CLOSE", style: .default) { (_) in
+            vc.dismiss(animated: true, completion: nil)
+        })
+        present(vc, animated: true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func presentMyAlertController() {
+        let vc = MyAlertController()
+        vc.definesPresentationContext = true
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true, completion: nil)
     }
-
-
 }
 
