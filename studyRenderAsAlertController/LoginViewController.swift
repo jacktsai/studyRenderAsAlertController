@@ -9,7 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var closeButton: UIButton!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,34 +26,31 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 修飾 contentView 的四角為圓邊
         contentView.layer.cornerRadius = 20
+        // 將 contentView 放大為 1.2 倍
         contentView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        // 將 contentView 設為透明
         contentView.alpha = 0
-        
-        closeButton.addTarget(self, action: #selector(touchDown(sender:)), for: .touchDown)
-        closeButton.addTarget(self, action: #selector(touchUp(sender:)), for: .touchUpInside)
-        closeButton.addTarget(self, action: #selector(touchUp(sender:)), for: .touchUpOutside)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // 使用動畫的方式呈現 contentView
         UIView.animate(withDuration: 0.3) {
             self.contentView.transform = CGAffineTransform(scaleX: 1, y: 1)
             self.contentView.alpha = 1
         }
     }
     
-    @IBAction func dismiss() {
+    @IBAction func login() {
+        // TODO 在這裡寫登入邏輯
         dismiss(animated: true, completion: nil)
     }
     
-    func touchDown(sender: UIButton) {
-        sender.backgroundColor = UIColor(white: 0.95, alpha: 1)
-    }
-    
-    func touchUp(sender: UIButton) {
-        sender.backgroundColor = nil
+    @IBAction func cancel() {
+        dismiss(animated: true, completion: nil)
     }
 }
 

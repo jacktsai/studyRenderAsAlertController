@@ -9,9 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAlertController" customModule="studyRenderAsAlertController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="studyRenderAsAlertController" customModuleProvider="target">
             <connections>
-                <outlet property="closeButton" destination="iT8-Qz-7en" id="T41-2E-e8L"/>
                 <outlet property="contentView" destination="UDO-iA-qV9" id="BE2-Ah-jel"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hLd-hI-Pch"/>
             </connections>
@@ -38,7 +37,7 @@
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="[ 登入 ]"/>
                             <connections>
-                                <action selector="dismiss" destination="-1" eventType="touchUpInside" id="iAI-pw-hSe"/>
+                                <action selector="login" destination="-1" eventType="touchUpInside" id="QSc-lo-W2J"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-i2-22s">
@@ -47,7 +46,7 @@
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="[ 取消 ]"/>
                             <connections>
-                                <action selector="dismiss" destination="-1" eventType="touchUpInside" id="WaG-m9-mTt"/>
+                                <action selector="cancel" destination="-1" eventType="touchUpInside" id="vFP-6X-AM3"/>
                             </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="電子郵件帳號" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-Gy-aoa">
