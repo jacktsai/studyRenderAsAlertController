@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyAlertController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     

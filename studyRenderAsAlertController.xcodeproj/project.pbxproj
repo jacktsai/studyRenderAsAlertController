@@ -14,8 +14,8 @@
 		09F05B7A1EC2FFA200A770CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B781EC2FFA200A770CA /* Main.storyboard */; };
 		09F05B7C1EC2FFA200A770CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B7B1EC2FFA200A770CA /* Assets.xcassets */; };
 		09F05B7F1EC2FFA200A770CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B7D1EC2FFA200A770CA /* LaunchScreen.storyboard */; };
-		09F05B891EC3009400A770CA /* MyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F05B881EC3009400A770CA /* MyAlertController.swift */; };
-		09F05B8A1EC3057400A770CA /* MyAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B8C1EC3057400A770CA /* MyAlertController.xib */; };
+		09F05B891EC3009400A770CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F05B881EC3009400A770CA /* LoginViewController.swift */; };
+		09F05B8A1EC3057400A770CA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B8C1EC3057400A770CA /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		09F05B7B1EC2FFA200A770CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09F05B7E1EC2FFA200A770CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09F05B801EC2FFA200A770CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09F05B881EC3009400A770CA /* MyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlertController.swift; sourceTree = "<group>"; };
-		09F05B8B1EC3057400A770CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyAlertController.xib; sourceTree = "<group>"; };
+		09F05B881EC3009400A770CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09F05B8B1EC3057400A770CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				09F05B7B1EC2FFA200A770CA /* Assets.xcassets */,
 				09F05B7D1EC2FFA200A770CA /* LaunchScreen.storyboard */,
 				09F05B801EC2FFA200A770CA /* Info.plist */,
-				09F05B8C1EC3057400A770CA /* MyAlertController.xib */,
-				09F05B881EC3009400A770CA /* MyAlertController.swift */,
+				09F05B8C1EC3057400A770CA /* LoginViewController.xib */,
+				09F05B881EC3009400A770CA /* LoginViewController.swift */,
 				092C7C4B1EC3EED200BEA09D /* SliderView.swift */,
 				0922453F1EC3FC40008AF869 /* SliderView.xib */,
 			);
@@ -136,7 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F05B8A1EC3057400A770CA /* MyAlertController.xib in Resources */,
+				09F05B8A1EC3057400A770CA /* LoginViewController.xib in Resources */,
 				09F05B7F1EC2FFA200A770CA /* LaunchScreen.storyboard in Resources */,
 				092245401EC3FC40008AF869 /* SliderView.xib in Resources */,
 				09F05B7C1EC2FFA200A770CA /* Assets.xcassets in Resources */,
@@ -153,7 +153,7 @@
 			files = (
 				09F05B771EC2FFA200A770CA /* ViewController.swift in Sources */,
 				092C7C4C1EC3EED200BEA09D /* SliderView.swift in Sources */,
-				09F05B891EC3009400A770CA /* MyAlertController.swift in Sources */,
+				09F05B891EC3009400A770CA /* LoginViewController.swift in Sources */,
 				09F05B751EC2FFA200A770CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,12 +177,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		09F05B8C1EC3057400A770CA /* MyAlertController.xib */ = {
+		09F05B8C1EC3057400A770CA /* LoginViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				09F05B8B1EC3057400A770CA /* Base */,
 			);
-			name = MyAlertController.xib;
+			name = LoginViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
