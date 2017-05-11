@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092245401EC3FC40008AF869 /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0922453F1EC3FC40008AF869 /* SliderView.xib */; };
+		092C7C4C1EC3EED200BEA09D /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C7C4B1EC3EED200BEA09D /* SliderView.swift */; };
 		09F05B751EC2FFA200A770CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F05B741EC2FFA200A770CA /* AppDelegate.swift */; };
 		09F05B771EC2FFA200A770CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F05B761EC2FFA200A770CA /* ViewController.swift */; };
 		09F05B7A1EC2FFA200A770CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F05B781EC2FFA200A770CA /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0922453F1EC3FC40008AF869 /* SliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
+		092C7C4B1EC3EED200BEA09D /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		09F05B711EC2FFA200A770CA /* studyRenderAsAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyRenderAsAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F05B741EC2FFA200A770CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F05B761EC2FFA200A770CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				09F05B801EC2FFA200A770CA /* Info.plist */,
 				09F05B8C1EC3057400A770CA /* MyAlertController.xib */,
 				09F05B881EC3009400A770CA /* MyAlertController.swift */,
+				092C7C4B1EC3EED200BEA09D /* SliderView.swift */,
+				0922453F1EC3FC40008AF869 /* SliderView.xib */,
 			);
 			path = studyRenderAsAlertController;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 			files = (
 				09F05B8A1EC3057400A770CA /* MyAlertController.xib in Resources */,
 				09F05B7F1EC2FFA200A770CA /* LaunchScreen.storyboard in Resources */,
+				092245401EC3FC40008AF869 /* SliderView.xib in Resources */,
 				09F05B7C1EC2FFA200A770CA /* Assets.xcassets in Resources */,
 				09F05B7A1EC2FFA200A770CA /* Main.storyboard in Resources */,
 			);
@@ -145,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F05B771EC2FFA200A770CA /* ViewController.swift in Sources */,
+				092C7C4C1EC3EED200BEA09D /* SliderView.swift in Sources */,
 				09F05B891EC3009400A770CA /* MyAlertController.swift in Sources */,
 				09F05B751EC2FFA200A770CA /* AppDelegate.swift in Sources */,
 			);

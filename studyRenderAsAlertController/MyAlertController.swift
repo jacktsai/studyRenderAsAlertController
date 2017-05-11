@@ -14,9 +14,10 @@ class MyAlertController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
+        providesPresentationContextTransitionStyle = true
         definesPresentationContext = true
         modalPresentationStyle = .overCurrentContext
-        modalTransitionStyle = .crossDissolve        
+        modalTransitionStyle = .crossDissolve
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,10 +26,23 @@ class MyAlertController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         contentView.layer.cornerRadius = 20
+        contentView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        contentView.alpha = 0
+        
         closeButton.addTarget(self, action: #selector(touchDown(sender:)), for: .touchDown)
         closeButton.addTarget(self, action: #selector(touchUp(sender:)), for: .touchUpInside)
         closeButton.addTarget(self, action: #selector(touchUp(sender:)), for: .touchUpOutside)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.contentView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            self.contentView.alpha = 1
+        }
     }
     
     @IBAction func dismiss() {
@@ -36,10 +50,16 @@ class MyAlertController: UIViewController {
     }
     
     func touchDown(sender: UIButton) {
-        sender.backgroundColor = UIColor(white: 0.8, alpha: 1)
+        sender.backgroundColor = UIColor(white: 0.95, alpha: 1)
     }
     
     func touchUp(sender: UIButton) {
         sender.backgroundColor = nil
     }
 }
+
+
+
+
+
+

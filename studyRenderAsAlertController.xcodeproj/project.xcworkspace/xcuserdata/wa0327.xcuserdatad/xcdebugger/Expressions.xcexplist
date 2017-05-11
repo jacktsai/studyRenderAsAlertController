@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MyAlertController.touchDown(sender : UIButton) -&gt; ():MyAlertController.swift">
+         contextName = "MyView.layoutSubviews() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "sender.backgroundColor">
+               value = "l.shadowOffset">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
